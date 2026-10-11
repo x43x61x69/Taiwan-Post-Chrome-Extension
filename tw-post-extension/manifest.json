@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "中華郵政追蹤與離線 OCR",
+  "version": "3.4.3",
+  "minimum_chrome_version": "116",
+  "description": "URL 追蹤碼同步、Enter 官方查詢及本機 ddddocr beta 辨識。",
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "action": {
+    "default_title": "中華郵政追蹤與離線 OCR",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png",
+      "48": "icons/icon-48.png",
+      "128": "icons/icon-128.png"
+    }
+  },
+  "permissions": ["offscreen", "storage"],
+  "background": {"service_worker": "background.js"},
+  "content_scripts": [{
+    "matches": ["https://postserv.post.gov.tw/pstmail/main_mail.html*"],
+    "js": ["content.js"],
+    "run_at": "document_idle"
+  }],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'; worker-src 'self'; connect-src 'self'"
+  }
+}

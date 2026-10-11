@@ -1,0 +1,49 @@
+{
+  "source": "ddddocr 1.5.6 beta",
+  "digits": [
+    {
+      "char": "",
+      "index": 0
+    },
+    {
+      "char": "0",
+      "index": 4733
+    },
+    {
+      "char": "1",
+      "index": 4018
+    },
+    {
+      "char": "2",
+      "index": 2851
+    },
+    {
+      "char": "3",
+      "index": 309
+    },
+    {
+      "char": "4",
+      "index": 3606
+    },
+    {
+      "char": "5",
+      "index": 5223
+    },
+    {
+      "char": "6",
+      "index": 13
+    },
+    {
+      "char": "7",
+      "index": 6794
+    },
+    {
+      "char": "8",
+      "index": 4919
+    },
+    {
+      "char": "9",
+      "index": 4725
+    }
+  ]
+}

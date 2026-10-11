@@ -1,0 +1,30 @@
+# macOS and editor files
+.DS_Store
+._*
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Python virtual environments and caches
+.venv/
+.venv-*/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Node.js dependencies and local npm cache
+node_modules/
+.npm-cache/
+npm-debug.log*
+
+# Local environment settings
+.env
+.env.*
+!.env.example
+
+# Keep bundled extension models, WASM, licenses, and test samples tracked.
